@@ -1,0 +1,42 @@
+package sunrin.quadcore;
+
+import android.media.MediaPlayer;
+import android.media.SoundPool;
+import android.os.*;
+import android.app.*;
+import android.view.*;
+import Helper.*;
+
+public class MainActivity extends Activity{
+	MediaPlayer mPlayer;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		setContentView(R.layout.a_main);
+        mPlayer = MediaPlayer.create(MainActivity.this, R.raw.dfs);
+        mPlayer.setLooping(true);
+        mPlayer.setVolume(3.0f, 3.0f);
+        mPlayer.start();
+	}
+	
+	public void mOnClick(View v){
+		switch(v.getId()){
+		case R.id.btn_start:
+			new Util().e_startActivity(MainActivity.this, GameActivity.class);
+			break;
+		case R.id.btn_help:
+			new Util().e_startActivity(MainActivity.this, HelpActivity.class);
+			break;
+		case R.id.btn_score:
+			new Util().e_startActivity(MainActivity.this, BestScoreActivity.class);
+			break;
+		}
+	}
+	
+	@Override
+	public void onBackPressed(){
+		mPlayer.stop();
+		finish();
+	}
+}

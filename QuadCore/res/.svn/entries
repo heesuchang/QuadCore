@@ -1,0 +1,55 @@
+10
+
+dir
+47
+https://dev.naver.com/svn/quadcore/QuadCore/res
+https://dev.naver.com/svn/quadcore
+
+
+
+2013-08-04T14:31:16.776869Z
+47
+changchris96
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1031b3a0-4f58-4fa2-9ba1-ab7cfacdea3d
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+menu
+dir
+
+raw
+dir
+
+values
+dir
+

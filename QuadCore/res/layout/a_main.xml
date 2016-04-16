@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/mainbg">
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        >
+
+    <ImageView
+        android:id="@+id/btn_start"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/btn_started"
+       	android:layout_centerHorizontal="true"
+       	android:layout_centerVertical="true"
+        android:onClick="mOnClick"/>
+   
+
+    <ImageView
+        android:id="@+id/btn_help"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_helped" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="mOnClick"/>
+
+    <ImageView
+        android:id="@+id/btn_score"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ranked" 
+        android:onClick="mOnClick"/>
+    <ImageView 
+        android:id="@+id/main_ranking"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/btn_score"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/text_main_ranking"
+        />
+    <ImageView 
+        android:id="@+id/main_help"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/btn_help"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_main_help"
+        />
+    <ImageView 
+        android:id="@+id/main_start"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_main_gamestart"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

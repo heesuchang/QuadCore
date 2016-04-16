@@ -1,0 +1,22 @@
+package sunrin.quadcore;
+
+import android.os.*;
+import android.app.*;
+import android.view.*;
+import Helper.*;
+
+public class SplashActivity extends Activity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.a_spalsh);
+        mAferSplash.sendEmptyMessageDelayed(0, 2000);
+    }
+    
+    Handler mAferSplash = new Handler(){
+    	public void handleMessage(Message msg){
+    		new Util().startActivity(SplashActivity.this, MainActivity.class);
+    	}
+    };
+}
